@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script>
+        function windowOpen()
+        {
+            var newPage=window.open("facebook.html","newname","top=200,left=100,width=1200,height=700,status")
+        }
+        function windowClose()
+        {
+            newPage.close()
+        }
+    </script>
+    </head>
+    
+    <body>
+        <form action="" method="post">
+            <input type="button" value="Open Window" id="t1" style="cursor: pointer; border: 2px solid green; text-align: center; font-size: 15px; border-radius: 8px; width: 1oopx; height: 30px; top: 50%; left: 40%; position: absolute;" onclick="windowOpen()">
+            
+            <input type="button" value="Close Window" style="cursor: pointer; border: 2px solid green; text-align: center; font-size: 15px; border-radius: 8px; width: 1oopx; height: 30px; position: absolute;" onclick="windowClose()">
+        </form>
+    </body>
+</html>
